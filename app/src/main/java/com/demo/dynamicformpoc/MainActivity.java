@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout formLinearLayout;
     private Button btnSubmit;
+    private ExpandableTextView expandableTextView;
 
     private static final String TAG = "MainActivity";
 
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String str = "Earth work in excavation by manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m.";
+
+        expandableTextView = (ExpandableTextView) findViewById(R.id.expandable_txt);
+        expandableTextView.setText(str);
 
 
         final String initialForm = "[ { \"type\": \"textView\", \"text\": \"Earth Work\", \"size\": 25, \"visible\": true }, { \"type\": \"textView\", \"text\": \"Earth work in excavation by manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m.\", \"size\": 10, \"visible\": true }, { \"type\": \"textView\", \"text\": \"All kinds of soil\", \"size\": 18, \"bold\": true, \"visible\": true }, { \"type\": \"textView\", \"text\": \"Boundary Wall\", \"size\": 14, \"bold\": true, \"visible\": true }, [ { \"type\": \"textView\", \"text\": \"Number\", \"size\": 12, \"visible\": true }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": false, \"value\": 38, \"visible\": true } ], [ { \"type\": \"textView\", \"text\": \"Length\", \"size\": 12, \"visible\": true }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": true, \"value\": 0, \"visible\": true } ], [ { \"type\": \"textView\", \"text\": \"Bredth\", \"size\": 12, \"visible\": true }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": true, \"value\": 0, \"visible\": true } ], [ { \"type\": \"textView\", \"text\": \"Height\", \"size\": 12, \"visible\": true }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": true, \"value\": 0, \"visible\": true } ], { \"type\": \"textView\", \"text\": \"Excavation work by manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m.\", \"size\": 10, \"visible\": false }, [ { \"type\": \"textView\", \"text\": \"Ordinary Rock (40% of total quantity)\", \"size\": 12, \"visible\": false }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": false, \"value\": 0, \"visible\": false } ], [ { \"type\": \"textView\", \"text\": \"Hard Rock (10% of total quantity)\", \"size\": 12, \"visible\": false }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": false, \"value\": 0, \"visible\": false } ], [ { \"type\": \"textView\", \"text\": \"Net quantity for ordinary soil\", \"size\": 12, \"visible\": false }, { \"type\": \"editText\", \"content\": \"number\", \"editable\": false, \"value\": 0, \"visible\": false } ] ]";
