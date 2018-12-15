@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         expandableTextView = (ExpandableTextView) findViewById(R.id.expandable_txt);
         expandableTextView.setText(str);
 
-        expandableTextViewNew = (com.ms.square.android.expandabletextview.ExpandableTextView) findViewById(R.id.expandable_text);
+        expandableTextViewNew = (com.ms.square.android.expandabletextview.ExpandableTextView) findViewById(R.id.expand_text_view);
         expandableTextViewNew.setText(str);
 
 
